@@ -1,0 +1,56 @@
+@import '../base/colores';
+
+/*--------------------------------------------------------------
+  # MERCH
+  --------------------------------------------------------------*/
+  .service-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .service-box:hover .ico-circle {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: $rojo;
+    -webkit-box-shadow: 0 0 0 10px $blanco;
+    -moz-box-shadow: 0 0 0 10px #e4e4e4;
+            box-shadow: 0 0 0 10px $blanco;
+  }
+  
+  .service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+  }
+  
+  .service-box-destacado {
+    background-color: #fff;
+    width: 317%;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .service-box .ico-circle {
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    font-size: 4rem;
+  }
+  
+  .service-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem 0;
+  }
+  
+  .service-box .s-description {
+    color: #4e4e4e;
+  }
+  

@@ -1,0 +1,53 @@
+
+@import '../base/colores';
+
+/*--------------------------------------------------------------
+  # Sobre Mí 
+  --------------------------------------------------------------*/
+  .about-mf {
+	.box-shadow-full {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+	.about-img {
+		margin-bottom: 2rem;
+		img {
+			margin-left: 10px;
+		}
+	}
+}
+.skill-mf {
+	span {
+		color: #4e4e4e;
+	}
+	.progress {
+		background-color: #cde1f8;
+		margin: .5rem 0 1.2rem 0;
+		border-radius: 0;
+		height: .7rem;
+		.progress-bar {
+			height: .7rem;
+			background-color: $rojo;
+		}
+	}
+}
+.lead {
+	color: $rojo4;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-style: italic;
+	letter-spacing: 0,5px;
+}
+.red_manifiesto {
+	color: $rojo4;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-style: italic;
+	letter-spacing: 0,5px;
+}
+@media (min-width: 767px) {
+	.about-mf {
+		.box-pl2 {
+			margin-top: 3rem;
+			padding-left: 0rem;
+		}
+	}
+}

@@ -1,0 +1,148 @@
+@import "../base/colores";
+
+/*--------------------------------------------------------------
+  # Música 
+  --------------------------------------------------------------*/
+.work-box {
+	margin-bottom: 3rem;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background-color: #fff;
+	&:hover {
+		img {
+			-webkit-transform: scale(1.3);
+			-moz-transform: scale(1.3);
+			-ms-transform: scale(1.3);
+			-o-transform: scale(1.3);
+			transform: scale(1.3);
+		}
+	}
+}
+.work-img {
+	display: block;
+	overflow: hidden;
+	img {
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-o-transition: all 1s;
+		transition: all 1s;
+	}
+}
+.work-content {
+	padding: 2rem 3% 1rem 4%;
+	.w-more {
+		color: #4e4e4e;
+		font-size: .8rem;
+		.w-ctegory {
+			font-weight: bolder;
+			color: $rojo;
+		}
+	}
+	.w-like {
+		font-size: 2.5rem;
+		color: $rojo;
+		float: right;
+		a {
+			color: $rojo;
+		}
+		.num-like {
+			font-size: .7rem;
+		}
+	}
+}
+.w-title {
+	font-size: 1.2rem;
+}
+.w-date {
+	font-weight: normal;
+	color: #1f1f1f;
+}
+
+
+/*--------------------------------------------------------------
+  # Música Details
+  --------------------------------------------------------------*/
+  .portfolio-details {
+	padding-top: 30px;
+	.portfolio-details-container {
+		position: relative;
+	}
+	.portfolio-details-carousel {
+		position: relative;
+		z-index: 1;
+		.owl-nav {
+			margin-top: 5px;
+			text-align: left;
+		}
+		.owl-dots {
+			margin-top: 5px;
+			text-align: left;
+		}
+		.owl-dot {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: #ddd;
+		}
+		.owl-dot.active {
+			background-color: $rojo;
+		}
+	}
+	.portfolio-info {
+		padding: 30px;
+		position: absolute;
+		right: 0;
+		bottom: -70px;
+		background: #fff;
+		-webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		z-index: 2;
+		h3 {
+			font-size: 22px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #eee;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			font-size: 15px;
+			li {
+				+ {
+					li {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+	.portfolio-description {
+		padding-top: 50px;
+		h2 {
+			width: 50%;
+			font-size: 26px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		p {
+			padding: 0 0 0 0;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.portfolio-details {
+		.portfolio-description {
+			h2 {
+				width: 100%;
+			}
+		}
+		.portfolio-info {
+			position: static;
+			margin-top: 30px;
+		}
+	}
+}
